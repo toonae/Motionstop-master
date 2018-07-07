@@ -2,12 +2,11 @@ package com.example.computer.motionstop;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MeatDetailActivity extends AppCompatActivity {
+public class Meat1Activity extends AppCompatActivity {
 
     TextView titleTextView, detailTextView;
     ImageView signImageView;
@@ -16,7 +15,7 @@ public class MeatDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_meat_detail);
+        setContentView(R.layout.activity_meat1);
 
         //Initial View ผูกตัวแปรบน JAVA กับ XML
         titleTextView = findViewById(R.id.txvTitle);
@@ -31,8 +30,6 @@ public class MeatDetailActivity extends AppCompatActivity {
 
     }//end onCreate Method
 
-    public void clickBack(View view) {
-        finish();
-    }//end clickBack Method
+
 
 }//end Class
