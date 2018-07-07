@@ -14,11 +14,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    }
+    }//end
         public void clickLink (View view) {
-            Intent aboutmeIntent = new Intent(MainActivity.this, HistoryActivity.class);
-            startActivity(aboutmeIntent);
+            Intent historyIntent = new Intent(MainActivity.this, HistoryActivity.class);
+            startActivity(historyIntent);
+    }//end
+        public  void clickMeat (View view){
+            Intent MeatIntent = new Intent(MainActivity.this, MeatActivity.class);
+            startActivity(MeatIntent);
+        }
 
-
-    }
 }
+

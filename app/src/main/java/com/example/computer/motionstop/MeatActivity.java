@@ -31,7 +31,7 @@ public class MeatActivity extends AppCompatActivity {
                 Intent intent;
                 switch (ar2){
                     case 0:
-                        intent = new Intent(getApplicationContext(),)
+                        intent = new Intent(getApplicationContext(),MeatDetailActivity.class);
                 }
             }
         });
