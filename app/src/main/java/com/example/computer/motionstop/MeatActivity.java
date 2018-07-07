@@ -25,17 +25,18 @@ public class MeatActivity extends AppCompatActivity {
 
         MyAdapter myAdapter = new MyAdapter(MeatActivity.this, ints, titleStrings, detailStrings);
         listView.setAdapter(myAdapter);
+
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> ar0, View ar1, int ar2, long ar3) {
-                Intent intent;
-                switch (ar2){
-                    case 0:
-                        intent = new Intent(getApplicationContext(),Meat1Activity.class);
-                }
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent detailIntent = new Intent(MeatActivity.this, Meat1Activity.class);
+                detailIntent.putExtra("Title", titleStrings[i]);
+                detailIntent.putExtra("Detail", detailStrings[i]);
+                detailIntent.putExtra("Image", ints[i]);
+                startActivity(detailIntent);
             }
         });
-
 
 
     }

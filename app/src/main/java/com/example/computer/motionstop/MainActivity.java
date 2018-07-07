@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         public  void clickMeat (View view){
             Intent MeatIntent = new Intent(MainActivity.this, MeatActivity.class);
             startActivity(MeatIntent);
-        }
+        }//end
 
 }
 
