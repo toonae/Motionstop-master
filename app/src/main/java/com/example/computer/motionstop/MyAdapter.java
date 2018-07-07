@@ -40,18 +40,17 @@ public class MyAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {//รับข้อมูลจาก Method getCount() มาแสดงผลบนแอป
 
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view1 = layoutInflater.inflate(R.layout.activity_main, viewGroup, false);
+        View view1 = layoutInflater.inflate(R.layout.activity_listview, viewGroup, false);
 
         //ผูกตัวแปรบน JAVA กับอิลิเมนท์บน XML ที่หน้า my_listview
         ImageView imageView = view1.findViewById(R.id.imageView);
-        //TextView titleTextView = view1.findViewById(R.id.txv1);
-
+        TextView titleTextView = view1.findViewById(R.id.txv2);
+       // TextView detailTextView = view1.findViewById(R.id.txv2);
 
         //Show data นำข้อมูลไปแสดงผลบนแอป
         imageView.setImageResource(ints[i]);
-        //titleTextView.setText(titleStrings[i]);
+        titleTextView.setText(titleStrings[i]);
         //detailTextView.setText(detailStrings[i]);
         return view1;
     }
 }//end Class
-
