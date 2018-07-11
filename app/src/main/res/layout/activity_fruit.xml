@@ -4,25 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#90ee90"
-    tools:context=".MeatActivity">
+    android:background="#FFFAF0"
+    tools:context=".FruitActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFFAF0">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-        </LinearLayout>
+            android:orientation="vertical" />
     </ScrollView>
 
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/listView9"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 </android.support.constraint.ConstraintLayout>

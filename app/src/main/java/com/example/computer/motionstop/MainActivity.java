@@ -22,7 +22,14 @@ public class MainActivity extends AppCompatActivity {
         public  void clickMeat (View view){
             Intent MeatIntent = new Intent(MainActivity.this, MeatActivity.class);
             startActivity(MeatIntent);
+    }//end
+        public  void clickSweet (View view) {
+            Intent SweetIntent = new Intent(MainActivity.this, SweetActivity.class);
+            startActivity(SweetIntent);
         }//end
-
+    public  void clickFruit (View view) {
+        Intent FruitIntent = new Intent(MainActivity.this, FruitActivity.class);
+        startActivity(FruitIntent);
+    }
 }
 

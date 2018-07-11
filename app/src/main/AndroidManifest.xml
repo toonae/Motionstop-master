@@ -18,7 +18,11 @@
         </activity>
         <activity android:name=".HistoryActivity" />
         <activity android:name=".MeatActivity" />
-        <activity android:name=".Meat1Activity"></activity>
+        <activity android:name=".Meat1Activity" />
+        <activity android:name=".SweetActivity" />
+        <activity android:name=".Sweet1Activity" />
+        <activity android:name=".FruitActivity" />
+        <activity android:name=".Fruit1Activity"></activity>
     </application>
 
 </manifest>
