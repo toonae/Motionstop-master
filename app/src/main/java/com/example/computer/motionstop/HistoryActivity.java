@@ -17,12 +17,12 @@ public class HistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
 
-        detailTextView = findViewById(R.id.txv9);
+        //detailTextView = findViewById(R.id.txv9);
         //detailTextView.setText(getIntent().getStringExtra("Detail"));
 
-        TextView label = (TextView) this.findViewById(R.id.txv9);
-        String data = (String) label.getText();
-        Toast toast = Toast.makeText(this,data,Toast.LENGTH_LONG);
+       // TextView label = (TextView) this.findViewById(R.id.txv9);
+       // String data = (String) label.getText();
+      //  Toast toast = Toast.makeText(this,data,Toast.LENGTH_LONG);
 
 
     }
