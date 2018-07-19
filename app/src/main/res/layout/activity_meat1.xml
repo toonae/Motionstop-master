@@ -18,11 +18,26 @@
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textColor="@android:color/background_dark"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imvSign"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvTitle"
+        app:srcCompat="@drawable/koi" />
 
     <Button
         android:id="@+id/button6"
@@ -36,7 +51,7 @@
         android:text="ส่วนผสม"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
     <Button
         android:id="@+id/button7"
@@ -51,24 +66,22 @@
         app:layout_constraintTop_toTopOf="@+id/button6" />
 
     <ImageView
-        android:id="@+id/imvSign"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:id="@+id/imvSign4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvTitle"
-        app:srcCompat="@drawable/koi" />
+        app:layout_constraintTop_toBottomOf="@+id/imvSign"
+        app:srcCompat="@drawable/koii" />
 
     <ScrollView
-        android:id="@+id/scrollView3"
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="150dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -76,21 +89,22 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imvSign">
+        app:layout_constraintTop_toBottomOf="@+id/imvSign4">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical" >
 
             <TextView
                 android:id="@+id/txvDetail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_margin="8dp"
-                android:gravity="center"
                 android:text="TextView"
-                android:textColor="@android:color/background_dark" />
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
         </LinearLayout>
     </ScrollView>
+
 </android.support.constraint.ConstraintLayout>

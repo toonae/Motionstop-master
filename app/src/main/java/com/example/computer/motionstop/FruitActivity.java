@@ -13,6 +13,8 @@ public class FruitActivity extends AppCompatActivity {
     private String[] titleStrings, detailStrings;
     private int[] ints = new int[]{R.drawable.chid,R.drawable.tan,R.drawable.jak,
             R.drawable.maprang,R.drawable.mamung};
+    private int[] ints9= new int[]{R.drawable.chidd,R.drawable.tann,R.drawable.jakk,
+            R.drawable.maprangg,R.drawable.mamunggg};
 
 
     @Override
@@ -34,6 +36,7 @@ public class FruitActivity extends AppCompatActivity {
                 detailIntent.putExtra("Title", titleStrings[i]);
                 detailIntent.putExtra("Detail", detailStrings[i]);
                 detailIntent.putExtra("Image", ints[i]);
+                detailIntent.putExtra("Image9", ints9[i]);
                 startActivity(detailIntent);
             }
         });

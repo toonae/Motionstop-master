@@ -12,6 +12,8 @@ public class SweetActivity extends AppCompatActivity {
     private String[] titleStrings, detailStrings;
     private int[] ints = new int[]{R.drawable.bua,R.drawable.kaya,R.drawable.nok,
             R.drawable.salim,R.drawable.tong};
+    private int[] ints1= new int[]{R.drawable.buaa,R.drawable.kayaa,R.drawable.nokk,
+            R.drawable.salimm,R.drawable.tongg};
 
 
     @Override
@@ -21,6 +23,8 @@ public class SweetActivity extends AppCompatActivity {
         listView1 = findViewById(R.id.listView1);
         titleStrings = getResources().getStringArray(R.array.topic);
         detailStrings = getResources().getStringArray(R.array.data);
+
+
 
         MyAdapter1 myAdapter = new MyAdapter1(SweetActivity.this, ints, titleStrings, detailStrings);
         listView1.setAdapter(myAdapter);
@@ -34,6 +38,7 @@ public class SweetActivity extends AppCompatActivity {
                 detailIntent.putExtra("topic", titleStrings[i]);
                 detailIntent.putExtra("data", detailStrings[i]);
                 detailIntent.putExtra("Image", ints[i]);
+                detailIntent.putExtra("Image1", ints1[i]);
                 startActivity(detailIntent);
             }
         });

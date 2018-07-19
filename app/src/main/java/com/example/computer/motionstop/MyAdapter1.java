@@ -20,6 +20,7 @@ public class MyAdapter1 extends BaseAdapter {
         this.titleStrings = titleStrings;
         this.detailStrings = detailStrings;
 
+
     }
 
     @Override

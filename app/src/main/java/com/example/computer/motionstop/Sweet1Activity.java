@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class Sweet1Activity extends AppCompatActivity {
 
     TextView titleTextView, detailTextView;
-    ImageView signImageView;
+    ImageView signImageView,ImageView;
     Button backButton;
 
     @Override
@@ -21,11 +21,15 @@ public class Sweet1Activity extends AppCompatActivity {
         titleTextView = findViewById(R.id.txvTitle1);
         detailTextView = findViewById(R.id.txvDetail1);
         signImageView = findViewById(R.id.imvSign1);
+        ImageView = findViewById(R.id.imvSign3);
 
         //รับข้อมูลจากการ Intent ไปแสดงผลบนหน้า XML
         titleTextView.setText(getIntent().getStringExtra("topic"));
         detailTextView.setText(getIntent().getStringExtra("data"));
+
         signImageView.setImageResource(getIntent().getIntExtra("Image",R.drawable.bua));
+        ImageView.setImageResource(getIntent().getIntExtra("Image1",R.drawable.buaa));
+
 
 
     }//end onCreate Method

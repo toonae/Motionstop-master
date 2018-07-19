@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class Meat1Activity extends AppCompatActivity {
 
     TextView titleTextView, detailTextView;
-    ImageView signImageView;
+    ImageView signImageView,ImageView;
     Button backButton;
 
     @Override
@@ -21,11 +21,13 @@ public class Meat1Activity extends AppCompatActivity {
         titleTextView = findViewById(R.id.txvTitle);
         detailTextView = findViewById(R.id.txvDetail);
         signImageView = findViewById(R.id.imvSign);
+        ImageView = findViewById(R.id.imvSign4);
 
         //รับข้อมูลจากการ Intent ไปแสดงผลบนหน้า XML
         titleTextView.setText(getIntent().getStringExtra("Title"));
         detailTextView.setText(getIntent().getStringExtra("Detail"));
         signImageView.setImageResource(getIntent().getIntExtra("Image",R.drawable.koi));
+        ImageView.setImageResource(getIntent().getIntExtra("Image2",R.drawable.koii));
 
 
     }//end onCreate Method

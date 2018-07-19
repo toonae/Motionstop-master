@@ -13,6 +13,8 @@ public class MeatActivity extends AppCompatActivity {
     private String[] titleStrings, detailStrings;
     private int[] ints = new int[]{R.drawable.koi,R.drawable.pal,R.drawable.pork,
             R.drawable.taipla,R.drawable.yam};
+    private int[] ints2= new int[]{R.drawable.koii,R.drawable.pall,R.drawable.porkk,
+            R.drawable.taiplaa,R.drawable.yamm};
 
 
     @Override
@@ -34,6 +36,7 @@ public class MeatActivity extends AppCompatActivity {
                 detailIntent.putExtra("Title", titleStrings[i]);
                 detailIntent.putExtra("Detail", detailStrings[i]);
                 detailIntent.putExtra("Image", ints[i]);
+                detailIntent.putExtra("Image2", ints2[i]);
                 startActivity(detailIntent);
             }
         });
