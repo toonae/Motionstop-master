@@ -1,7 +1,9 @@
 package com.example.computer.motionstop;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -31,7 +33,9 @@ public class Meat1Activity extends AppCompatActivity {
 
 
     }//end onCreate Method
+    public  void clickVdo (View view) {
+        Intent vdoIntent = new Intent(Meat1Activity.this, VdoActivity.class);
+        startActivity(vdoIntent);
 
-
-
+    }
 }//end Class
