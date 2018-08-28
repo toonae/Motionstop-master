@@ -23,7 +23,8 @@
         <activity android:name=".Sweet1Activity" />
         <activity android:name=".FruitActivity" />
         <activity android:name=".Fruit1Activity" />
-        <activity android:name=".VdoActivity"></activity>
+        <activity android:name=".VdoActivity" />
+        <activity android:name=".FooddetailActivity"></activity>
     </application>
 
 </manifest>

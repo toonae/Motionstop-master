@@ -61,6 +61,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:background="#19ce22"
+        android:onClick="clickfoodtail"
         android:text="วิธีทำอาหาร"
         app:layout_constraintBottom_toBottomOf="@+id/button9"
         app:layout_constraintStart_toEndOf="@+id/button9"
