@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class FooddetailActivity extends AppCompatActivity {
-    ImageView imgpImageView;
+    ImageView imgpImageView,imgppImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +15,8 @@ public class FooddetailActivity extends AppCompatActivity {
 
         imgpImageView = findViewById(R.id.img1);
         imgpImageView.setImageResource(getIntent().getIntExtra("Image",R.drawable.b));
+
+        imgppImageView= findViewById(R.id.imgv11);
     }
 
     public void clickBack(View view) {

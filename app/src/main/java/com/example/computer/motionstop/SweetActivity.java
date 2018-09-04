@@ -10,16 +10,17 @@ import android.widget.ListView;
 public class SweetActivity extends AppCompatActivity {
     ListView listView1;
     private String[] titleStrings, detailStrings;
-    private int[] ints = new int[]{R.drawable.bua,R.drawable.kaya,R.drawable.nok,
-            R.drawable.salim,R.drawable.tong};
-    private int[] ints1= new int[]{R.drawable.buaa,R.drawable.kayaa,R.drawable.nokk,
-            R.drawable.salimm,R.drawable.tongg};
+    private int[] ints = new int[]{R.drawable.bua,R.drawable.kaya,R.drawable.lam,
+            R.drawable.ping,R.drawable.tong};
+    private int[] ints1= new int[]{R.drawable.buaa,R.drawable.kayaa,R.drawable.lamm,
+            R.drawable.pingg,R.drawable.tongg};
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sweet);
+
         listView1 = findViewById(R.id.listView1);
         titleStrings = getResources().getStringArray(R.array.topic);
         detailStrings = getResources().getStringArray(R.array.data);
