@@ -33,8 +33,8 @@ public class Meat1Activity extends AppCompatActivity {
         //รับข้อมูลจากการ Intent ไปแสดงผลบนหน้า XML
         titleTextView.setText(getIntent().getStringExtra("Title"));
         detailTextView.setText(getIntent().getStringExtra("Detail"));
-        signImageView.setImageResource(getIntent().getIntExtra("Image",R.drawable.koi));
-        ImageView.setImageResource(getIntent().getIntExtra("Image2",R.drawable.koii));
+        signImageView.setImageResource(getIntent().getIntExtra("Image",R.drawable.gangoom));
+        ImageView.setImageResource(getIntent().getIntExtra("Image2",R.drawable.gangoomm));
 
 
     }//end onCreate Method

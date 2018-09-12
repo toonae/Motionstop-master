@@ -32,8 +32,8 @@ public class Fruit1Activity extends AppCompatActivity {
         //รับข้อมูลจากการ Intent ไปแสดงผลบนหน้า XML
         titleTextView.setText(getIntent().getStringExtra("Title"));
         detailTextView.setText(getIntent().getStringExtra("Detail"));
-        signImageView.setImageResource(getIntent().getIntExtra("Image",R.drawable.chid));
-        ImageView.setImageResource(getIntent().getIntExtra("Image9",R.drawable.chidd));
+        signImageView.setImageResource(getIntent().getIntExtra("Image",R.drawable.lingee));
+        ImageView.setImageResource(getIntent().getIntExtra("Image9",R.drawable.lingeee));
 
 
     }//end onCreate Method

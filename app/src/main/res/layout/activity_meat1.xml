@@ -48,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/koi" />
+        app:srcCompat="@drawable/gangoom" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -109,7 +109,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imvSign"
-        app:srcCompat="@drawable/koii" />
+        app:srcCompat="@drawable/gangoomm" />
 
     <ScrollView
         android:id="@+id/scrollView2"

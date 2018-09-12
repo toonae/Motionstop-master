@@ -11,9 +11,9 @@ public class MeatActivity extends AppCompatActivity {
 
     ListView listView;
     private String[] titleStrings, detailStrings;
-    private int[] ints = new int[]{R.drawable.koi,R.drawable.pal,R.drawable.pork,
+    private int[] ints = new int[]{R.drawable.gangoom,R.drawable.pal,R.drawable.tub,
             R.drawable.taipla,R.drawable.yam};
-    private int[] ints2= new int[]{R.drawable.koii,R.drawable.pall,R.drawable.porkk,
+    private int[] ints2= new int[]{R.drawable.gangoomm,R.drawable.pall,R.drawable.tubb,
             R.drawable.taiplaa,R.drawable.yamm};
 
 

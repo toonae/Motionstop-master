@@ -11,10 +11,10 @@ public class FruitActivity extends AppCompatActivity {
 
     ListView listView;
     private String[] titleStrings, detailStrings;
-    private int[] ints = new int[]{R.drawable.chid,R.drawable.tan,R.drawable.jak,
-            R.drawable.maprang,R.drawable.mamung};
-    private int[] ints9= new int[]{R.drawable.chidd,R.drawable.tann,R.drawable.jakk,
-            R.drawable.maprangg,R.drawable.mamunggg};
+    private int[] ints = new int[]{R.drawable.lingee,R.drawable.turian,R.drawable.rbt,
+            R.drawable.pub,R.drawable.gad};
+    private int[] ints9= new int[]{R.drawable.lingeee,R.drawable.turiann,R.drawable.rbtt,
+            R.drawable.pubb,R.drawable.gadd};
 
 
     @Override
