@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bb"
+    android:background="#FFFAF0"
     tools:context=".Sweet1Activity">
 
     <ImageView
@@ -38,6 +38,20 @@
         app:srcCompat="@drawable/thai" />
 
     <ImageButton
+        android:id="@+id/btn01"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:onClick="clickBack"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bback" />
+
+    <ImageButton
         android:id="@+id/imb"
         android:layout_width="200dp"
         android:layout_height="60dp"
@@ -61,6 +75,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:background="@null"
+        android:onClick="clickfoodtail"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/imb"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,9 +137,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
-        android:textColor="@android:color/background_dark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:typeface="monospace"
+        app:fontFamily="serif"
         app:layout_constraintBottom_toTopOf="@+id/imvSign1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

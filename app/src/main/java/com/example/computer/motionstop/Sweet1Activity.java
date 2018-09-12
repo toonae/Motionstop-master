@@ -13,7 +13,7 @@ public class Sweet1Activity extends AppCompatActivity {
 
     TextView titleTextView, detailTextView;
     ImageView signImageView,ImageView,ImageView1;
-    ImageButton imb,imb1;
+    ImageButton imb,imb1,btn01;
     Button backButton;
 
     @Override
@@ -29,6 +29,8 @@ public class Sweet1Activity extends AppCompatActivity {
         ImageView1 = findViewById(R.id.imgt);
         imb = findViewById(R.id.imb);
         imb1 = findViewById(R.id.imb1);
+        btn01 = findViewById(R.id.btn01);
+
 
         //รับข้อมูลจากการ Intent ไปแสดงผลบนหน้า XML
         titleTextView.setText(getIntent().getStringExtra("topic"));
@@ -44,5 +46,8 @@ public class Sweet1Activity extends AppCompatActivity {
     public  void clickfoodtail (View view) {
         Intent foodtailIntent = new Intent(Sweet1Activity.this, FooddetailActivity.class);
         startActivity(foodtailIntent);
+    }
+    public void clickBack(View view) {
+        finish();
     }
 }//end Class

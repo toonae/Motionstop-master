@@ -7,28 +7,10 @@
     android:background="#FFFAF0"
     tools:context=".FooddetailActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="วิธีทำอาหาร"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:fontFamily="serif-monospace"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/img1"
-        android:layout_width="600dp"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="430dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -37,18 +19,39 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/im1"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/bbb" />
+        app:srcCompat="@drawable/buaroy" />
 
     <ImageView
-        android:id="@+id/imgv11"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:id="@+id/im1"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cookkk" />
+
+    <ImageButton
+        android:id="@+id/imb2"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:srcCompat="@drawable/cook"
-        tools:layout_editor_absoluteY="8dp" />
+        android:background="@null"
+        android:onClick="clickBack"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@drawable/butback" />
 
 </android.support.constraint.ConstraintLayout>

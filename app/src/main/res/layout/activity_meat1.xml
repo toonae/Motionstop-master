@@ -15,14 +15,25 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:text="TextView"
-        android:textColor="@android:color/background_dark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:typeface="monospace"
+        app:fontFamily="serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn02"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:onClick="clickBack"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/bback" />
 
     <ImageView
         android:id="@+id/imvSign"
@@ -36,40 +47,61 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/koi" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="280dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/thai" />
+
+    <ImageButton
+        android:id="@+id/imb2"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="#19ce22"
+        android:background="@null"
         android:onClick="clickVdo"
-        android:text="ส่วนผสม"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@drawable/sign" />
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:id="@+id/imb3"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:background="#19ce22"
-        android:text="วิธีทำอาหาร"
-        app:layout_constraintBottom_toBottomOf="@+id/button6"
-        app:layout_constraintStart_toEndOf="@+id/button6"
-        app:layout_constraintTop_toTopOf="@+id/button6" />
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imb2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imb2"
+        app:layout_constraintTop_toTopOf="@+id/imb2"
+        app:srcCompat="@drawable/sig" />
 
     <ImageView
         android:id="@+id/imvSign4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="110dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
@@ -82,7 +114,7 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="130dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -95,7 +127,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/txvDetail"

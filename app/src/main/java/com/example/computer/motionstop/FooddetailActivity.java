@@ -3,10 +3,12 @@ package com.example.computer.motionstop;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class FooddetailActivity extends AppCompatActivity {
     ImageView imgpImageView,imgppImageView;
+    ImageButton imb2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,9 +16,10 @@ public class FooddetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fooddetail);
 
         imgpImageView = findViewById(R.id.img1);
-        imgpImageView.setImageResource(getIntent().getIntExtra("Image",R.drawable.b));
+        imb2 = findViewById(R.id.imb2);
+        imgpImageView.setImageResource(getIntent().getIntExtra("Image",R.drawable.buaroy));
 
-        imgppImageView= findViewById(R.id.imgv11);
+        imgppImageView= findViewById(R.id.im1);
     }
 
     public void clickBack(View view) {
