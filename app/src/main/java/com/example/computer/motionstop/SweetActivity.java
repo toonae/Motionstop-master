@@ -16,6 +16,7 @@ public class SweetActivity extends AppCompatActivity {
             R.drawable.pingg,R.drawable.tongg};
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +43,8 @@ public class SweetActivity extends AppCompatActivity {
                 detailIntent.putExtra("Image1", ints1[i]);
                 startActivity(detailIntent);
             }
+
+
         });
 
 

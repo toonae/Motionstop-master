@@ -41,6 +41,8 @@ public class Sweet1Activity extends AppCompatActivity {
 
 
 
+
+
     }//end onCreate Method
 
     public  void clickfoodtail (View view) {
