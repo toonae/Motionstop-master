@@ -25,6 +25,7 @@
         <activity android:name=".Fruit1Activity" />
         <activity android:name=".VdoActivity" />
         <activity android:name=".FooddetailActivity" />
+        <activity android:name=".Fooddetail1Activity"></activity>
     </application>
 
 </manifest>

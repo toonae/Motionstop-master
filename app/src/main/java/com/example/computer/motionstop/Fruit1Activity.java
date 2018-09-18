@@ -23,10 +23,8 @@ public class Fruit1Activity extends AppCompatActivity {
         //Initial View ผูกตัวแปรบน JAVA กับ XML
         titleTextView = findViewById(R.id.txvTitle9);
         detailTextView = findViewById(R.id.txvDetail9);
-        signImageView = findViewById(R.id.img);
+        signImageView = findViewById(R.id.imb2);
         ImageView = findViewById(R.id.img9);
-        imb4 = findViewById(R.id.imb4);
-        imb5 = findViewById(R.id.imb5);
         btn03 = findViewById(R.id.btn03);
 
         //รับข้อมูลจากการ Intent ไปแสดงผลบนหน้า XML
